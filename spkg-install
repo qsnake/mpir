@@ -9,7 +9,7 @@ fi
 set -e
 
 unset RM
-./configure --prefix="$SPKG_LOCAL"
+./configure --prefix="$SPKG_LOCAL" --enable-gmpcompat
 make
 make check
 make install
